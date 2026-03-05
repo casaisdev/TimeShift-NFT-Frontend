@@ -98,11 +98,12 @@ export const DYNAMIC_NFT_ABI = [ /* ...your contract ABI... */ ];
 ## 🖥️ Usage
 
 1. **Start the dev server:**
+
     ```bash
     npm run dev
     ```
-2. **Open** [http://localhost:5173](http://localhost:5173) in your browser.
-3. **Connect your wallet** and mint your first dynamic NFT!
+3. **Open** [http://localhost:5173](http://localhost:5173) in your browser.
+4. **Connect your wallet** and mint your first dynamic NFT!
 
 ---
 
