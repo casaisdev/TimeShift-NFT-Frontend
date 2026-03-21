@@ -1,4 +1,4 @@
-// Reemplaza estos valores por los reales de tu contrato
+// Replace these values with your contract's real values
 export const DYNAMIC_NFT_ADDRESS = "0xA7FF038011ab80e0837262c9BAe3814352317cF4";
 
 export const DYNAMIC_NFT_ABI = [

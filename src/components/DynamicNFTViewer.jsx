@@ -8,7 +8,7 @@ export function DynamicNFTViewer({ provider, address }) {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
-  // Busca el tokenId del usuario recorriendo todos los tokenId existentes
+  // Find the user's tokenId by iterating through all existing tokenIds
   useEffect(() => {
     let cancelled = false
     async function fetchNFT() {
@@ -39,7 +39,7 @@ export function DynamicNFTViewer({ provider, address }) {
     return () => { cancelled = true }
   }, [provider, address])
 
-  // Actualiza la metadata/SVG cada 3 segundos
+  // Update metadata/SVG every 3 seconds
   useEffect(() => {
     let interval
     let cancelled = false

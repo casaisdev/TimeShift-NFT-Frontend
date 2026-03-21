@@ -20,7 +20,7 @@ export function MintButton({ provider, disabled, onMinted }) {
       setTxHash(tx.hash)
       await tx.wait()
       setConfirmed(true)
-      if (onMinted) onMinted() // Notifica al padre
+      if (onMinted) onMinted() // Notify parent
     } catch (err) {
       setError(err.message)
     }

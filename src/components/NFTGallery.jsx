@@ -12,7 +12,7 @@ export function NFTGallery({ nfts, onSelect, selectedId, provider }) {
   const [dynamicNFTs, setDynamicNFTs] = useState(nfts)
   const [showAll, setShowAll] = useState(false)
 
-  // Recarga los metadatos/SVGs cada 3 segundos
+  // Reload metadata/SVGs every 3 seconds
   useEffect(() => {
     let cancelled = false
     let interval

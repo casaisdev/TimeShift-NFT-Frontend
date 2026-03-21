@@ -45,7 +45,7 @@ function App() {
   const featuredNFT = nfts.find(nft => nft.tokenId === selectedId) || nfts[0]
   const handleMinted = () => setRefreshNFTs(r => r + 1)
 
-  // 1. Animaciones y microinteracciones: spinner y hover/focus
+  // 1. Animations and microinteractions: spinner and hover/focus
   function Spinner() {
     return (
       <div className="flex items-center justify-center mt-10">
@@ -54,24 +54,24 @@ function App() {
     )
   }
 
-  // 3. Glassmorphism y fondo animado extra
-  // 4. Accesibilidad: aria-labels, roles, focus-visible, alt texts
-  // 5. Responsive: paddings, scroll, fuentes
-  // 6. Logo animado y badge en el NFT destacado
+  // 3. Glassmorphism and extra animated background
+  // 4. Accessibility: aria-labels, roles, focus-visible, alt texts
+  // 5. Responsive: paddings, scroll, fonts
+  // 6. Animated logo and badge on the featured NFT
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-900 relative overflow-x-hidden">
-      {/* Fondo animado de partículas */}
+      {/* Animated particle background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <canvas id="particles-bg" className="w-full h-full" style={{ position: 'absolute', inset: 0, zIndex: 0 }} aria-hidden="true"></canvas>
       </div>
-      {/* Logo animado */}
+      {/* Animated logo */}
       <div className="absolute top-6 left-8 z-30 flex items-center gap-3 animate-logo-pop">
         <img src="/timeshift.svg" alt="TimeShift Logo" className="w-14 h-14 drop-shadow-xl animate-spin-slow" />
         <span className="text-3xl font-black text-white bg-gradient-to-r from-blue-400 via-purple-300 to-blue-200 bg-clip-text text-transparent drop-shadow-lg hidden md:inline animate-titlepop">TimeShift</span>
       </div>
       <div className="absolute top-6 right-8 z-20 animate-fade-in">
-        <ConnectButton label="Conectar Wallet" />
+        <ConnectButton label="Connect Wallet" />
       </div>
       {/* Decorative blurred background shapes */}
       <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-gradient-to-br from-blue-400 via-purple-400 to-indigo-500 opacity-30 rounded-full blur-3xl pointer-events-none animate-bgfloat" />
@@ -207,7 +207,7 @@ function App() {
           }
         `}
       </style>
-      {/* Fondo de partículas animadas */}
+      {/* Animated particles background */}
       <script dangerouslySetInnerHTML={{
         __html: `
         (() => {
